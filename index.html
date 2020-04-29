@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vitolo19_art</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        #menu {
+            max-height: 100%;
+        }
+
+        #menu-main a {
+            color: white;
+        }
+
+        #menu-main a:hover {
+            background-color: white;
+            color: rgb(43, 39, 42);
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+
+<body style="background-color: rgb(43, 39, 42);">
+    <main class="row m-0">
+        <div id="menu" class="col-4 m-0 p-0" style="background-color: rgb(31, 31, 31); height: 750px">
+            <header id="menu-header" class="m-0">
+                <img id="btn-switch-menu" src="img/logo.png" style="cursor: pointer; width: 100%">
+            </header>
+            <main id="menu-main" class="row m-0">
+                <a href="#" class="col-12 text-center" style="font-size: 36px">HOME</a>
+                <a href="https://youtube.com" target="_black" class="col-12 text-center"
+                    style="font-size: 36px">YOUTUBE</a>
+                <a href="https://instagram.com" target="_black" class="col-12 text-center"
+                    style="font-size: 36px">INSTAGRAM</a>
+                <a href="https://twitter.com" target="_black" class="col-12 text-center"
+                    style="font-size: 36px">TWITTER</a>
+                <a href="https://patreon.com" target="_black" class="col-12 text-center"
+                    style="font-size: 36px">PATREON</a>
+                <a href="#" class="col-12 text-center" style="font-size: 36px">TIENDA</a>
+            </main>
+        </div>
+        <div id="comic-container" class="col m-0">
+            <header class="d-flex justify-content-center pt-3">
+                <a class="text-center text-white mx-2 back-page" style="font-size: 26px; cursor: pointer;"><i
+                        class="fas fa-chevron-left"></i></a>
+                <a class="text-center text-white mt-1 mx-2" style="font-size: 20px; cursor: pointer;">GALERÍA</a>
+                <a class="text-center text-white mx-2 next-page" style="font-size: 26px; cursor: pointer;"><i
+                        class="fas fa-chevron-right"></i></a>
+            </header>
+            <main>
+                <div class="w-100 container d-flex justify-content-center p-3">
+                    <div style="height: 620px; width: 70%">
+                        <div id="comic" style="background-image: url(./img/comic/1.jpg); background-size: cover; width: 100%; height: 100%"></div>
+                    </div>
+                </div>
+            </main>
+            <footer class="d-flex justify-content-center">
+                <a class="text-center text-white mx-2 back-page" style="font-size: 26px; cursor: pointer;"><i
+                        class="fas fa-chevron-left"></i></a>
+                <a class="text-center text-white mt-1 mx-2" style="font-size: 20px; cursor: pointer;">GALERÍA</a>
+                <a class="text-center text-white mx-2 next-page" style="font-size: 26px; cursor: pointer;"><i
+                        class="fas fa-chevron-right"></i></a>
+            </footer>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="./js/menu-functions.js"></script>
+    <script src="./js/comic-functions.js"></script>
+</body>
+
+</html>

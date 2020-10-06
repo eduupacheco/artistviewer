@@ -1,0 +1,87 @@
+body, html {
+    margin: 0%;
+    padding: 0%;
+    background-color: rgb(43, 39, 42);
+    height: 100%;
+    width: 100%;
+}
+
+#menu {
+    background-color: rgb(31, 31, 31);
+    height: 100vh;
+}
+
+
+#designs-container {
+    height: 100vh;
+}
+
+#btn-toggle {
+    color: white;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+#socials a {
+    color: white;
+    font-size: 38px;
+}
+
+#socials a:hover {
+    background-color: white;
+    color: rgb(43, 39, 42);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#cover {
+    width: 480px;
+}
+
+#cover > img {
+    width: 100%;
+    height: unset;
+}
+
+
+#pad-left, #pad-right {
+    height: 100%; 
+    position: absolute; 
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: none;
+    opacity: 0;
+    transition: color 0.5s ease-in-out, opacitity 0.5s ease-in-out ;
+}
+
+#pad-left {
+    left: 0%;
+}
+
+#pad-right {
+    right: 0%;
+}
+
+#pad-left:hover, #pad-right:hover {
+    color: white;
+    opacity: 0.8;
+}
+
+@media (max-width: 765px) {
+    #menu {
+        height: max-content;
+    }
+
+    #socials a {
+        font-size: 16px;
+    }
+
+    #socials a:hover {
+        background-color: unset;
+        color: white;
+        cursor: pointer;
+        text-decoration: none;
+    }
+}

@@ -4,75 +4,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vitolo19_art</title>
+    <title>Artist Viewer | Demo</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-    <style>
-        body {
-            margin: 0%;
-            padding: 0%;
-        }
-
-        #menu {
-            max-height: 100%;
-        }
-
-        #menu-main a {
-            color: white;
-        }
-
-        #menu-main a:hover {
-            background-color: white;
-            color: rgb(43, 39, 42);
-            cursor: pointer;
-            text-decoration: none;
-        }
-
-    </style>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body style="background-color: rgb(43, 39, 42);">
-    <main class="row m-0">
-        <div id="menu" class="col-4 m-0 p-0" style="background-color: rgb(31, 31, 31); height: 750px">
-            <header id="menu-header" class="m-0">
-                <img id="btn-switch-menu" src="img/logo.png" style="cursor: pointer; width: 100%">
-            </header>
-            <main id="menu-main" class="row m-0">
-                <a href="#" class="col-12 text-center" style="font-size: 36px">HOME</a>
-                <a href="https://youtube.com" target="_black" class="col-12 text-center"
-                    style="font-size: 36px">YOUTUBE</a>
-                <a href="https://instagram.com" target="_black" class="col-12 text-center"
-                    style="font-size: 36px">INSTAGRAM</a>
-                <a href="https://twitter.com" target="_black" class="col-12 text-center"
-                    style="font-size: 36px">TWITTER</a>
-                <a href="https://patreon.com" target="_black" class="col-12 text-center"
-                    style="font-size: 36px">PATREON</a>
-                <a href="#" class="col-12 text-center" style="font-size: 36px">TIENDA</a>
-            </main>
+<body>
+    <main class="row m-0 p-0">
+        <div id="menu" class="col-md-4 m-0 p-0">
+            <div class="d-none d-md-flex justify-content-center p-3"><button id="btn-toggle" class="fas fa-times text-white" style="font-size: 36px;"></button></div>
+            <div id="username-div" class="d-none d-md-flex justify-content-center p-3"><h4 class="text-white text-center">EDUARDO PACHECO</h4></div>
+            <div id="socials" class="row m-0 p-3 p-md-0 d-flex justify-content-center">
+                <a href="https://twitter.com/eduupacheco_" target="_blank" class="col-1 col-md-12 text-center"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com/eduupacheco_" target="_blank" class="col-1 col-md-12 text-center"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/eduardopachecoexposito/" target="_blank" class="col-1 col-md-12 text-center"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitch.tv/eduupacheco" target="_blank" class="col-1 col-md-12 text-center"><i class="fab fa-twitch"></i></a>
+                <a href="https://www.youtube.com/channel/UCviRZH-O13e0YJRxQWfOy6g?view_as=subscriber" target="_blank" class="col-1 col-md-12 text-center"><i class="fab fa-youtube"></i></a>
+                <a href="https://github.com/eduupacheco" target="_blank" class="col-1 col-md-12 text-center"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/eduupacheco/" target="_blank" class="col-1 col-md-12 text-center"><i class="fab fa-linkedin"></i></a>
+                <a href="https://eduupacheco.github.io" target="_blank" class="col-1 col-md-12 text-center"><i class="fas fa-globe"></i></a>
+            </div>
+            <div id="powered" class="d-none d-md-flex justify-content-center p-3 mt-4"><h6 class="text-muted text-center small">Powered by Eduardo Pacheco</h6></div>
         </div>
-        <div id="comic-container" class="col m-0">
-            <header class="d-flex justify-content-center pt-3">
-                <a class="text-center text-white mx-2 back-page" style="font-size: 26px; cursor: pointer;"><i
-                        class="fas fa-chevron-left"></i></a>
-                <a class="text-center text-white mt-1 mx-2" style="font-size: 20px; cursor: pointer;">GALERÍA</a>
-                <a class="text-center text-white mx-2 next-page" style="font-size: 26px; cursor: pointer;"><i
-                        class="fas fa-chevron-right"></i></a>
-            </header>
-            <main>
-                <div class="w-100 container d-flex justify-content-center p-3">
-                    <div style="height: 620px; width: 70%">
-                        <div id="comic" style="background-image: url(./img/comic/1.jpg); background-size: cover; width: 100%; height: 100%"></div>
-                    </div>
-                </div>
-            </main>
-            <footer class="d-flex justify-content-center">
-                <a class="text-center text-white mx-2 back-page" style="font-size: 26px; cursor: pointer;"><i
-                        class="fas fa-chevron-left"></i></a>
-                <a class="text-center text-white mt-1 mx-2" style="font-size: 20px; cursor: pointer;">GALERÍA</a>
-                <a class="text-center text-white mx-2 next-page" style="font-size: 26px; cursor: pointer;"><i
-                        class="fas fa-chevron-right"></i></a>
-            </footer>
+        <div id="designs-container" class="col m-0 p-0 d-flex justify-content-center">
+            <button role="button" id="pad-left" class="w-50"><div class="d-flex justify-content-start h-100 pl-5"><span class="my-auto"><i class="fas fa-arrow-circle-left" style="font-size: 32px;"></i></span></div></button>
+            <button role="button" id="pad-right" class="w-50"><div class="d-flex justify-content-end h-100 pr-5"><span class="my-auto"><i class="fas fa-arrow-circle-right" style="font-size: 32px;"></i></span></div></button>
+            <div id="cover" class="m-0 d-flex justify-content-center">
+                <img class="my-auto" src="./img/designs/1.jpg">
+            </div>
         </div>
     </main>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -85,7 +46,7 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
     <script src="./js/menu-functions.js"></script>
-    <script src="./js/comic-functions.js"></script>
+    <script src="./js/page-functions.js"></script>
 </body>
 
 </html>
